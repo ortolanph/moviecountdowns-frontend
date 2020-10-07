@@ -1,0 +1,17 @@
+<div class="card">
+  <div *ngIf="isNew(countdown)" class="card-header">
+    <h4>
+      <span class="badge badge-pill badge-warning">NEW</span>
+    </h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{countdown.title}}</h5>
+    <p class="card-text"><i>{{countdown.releaseDate}}</i></p>
+    <p *ngIf="countdown.sinopsis" class="card-text">{{countdown.sinopsis}}</p>
+    <app-links [links]="countdown.links"></app-links>
+  </div>
+  <div class="card-footer">
+    <app-count-down-timer [releaseDate]="countdown.releaseDate"></app-count-down-timer>
+  </div>
+</div>
+

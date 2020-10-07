@@ -1,0 +1,38 @@
+<!-- Special formatting: 1 day message TOMORROW!-->
+<div *ngIf="isTomorrow" class="timer-container">
+  <div class="timer-number-container">
+    <div class="information-label">TOMORROW!</div>
+  </div>
+</div>
+
+<!-- Special formatting: 0 day message TODAY!-->
+<div *ngIf="isToday" class="timer-container">
+  <div class="timer-number-container">
+    <div class="information-label">TODAY!</div>
+  </div>
+</div>
+
+<div *ngIf="!isToday && !isTomorrow" class="timer-container">
+  <div class="timer-number-container">
+    <div class="timer-number">{{timer.years}}</div>
+    <div class="timer-label"><i>Years</i></div>
+    <div class="timer-number">{{timer.months}}</div>
+    <div class="timer-label"><i>Months</i></div>
+    <div class="timer-number">{{timer.days}}</div>
+    <div class="timer-label"><i>Days</i></div>
+  </div>
+</div>
+
+<!-- Special formatting: 3 months message Check for trailers!-->
+<div *ngIf="threeMonthsFromNow" class="timer-container">
+  <div class="timer-number-container">
+    <div class="timer-label">Check for trailers!</div>
+  </div>
+</div>
+
+<!-- Special formatting: 1 month message Check for tickets!-->
+<div *ngIf="oneMonthFromNow" class="timer-container">
+  <div class="timer-number-container">
+    <div class="timer-label">Check for tickets!</div>
+  </div>
+</div>

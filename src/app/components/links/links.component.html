@@ -1,0 +1,12 @@
+<div class="container">
+  <a *ngFor="let link of links"
+     [href]="link.url"
+     class="btn btn-link"
+     role="button"
+     target="_blank">
+    <i class="{{link.category.icon}}"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="{{link.title}}"></i>
+  </a>
+</div>

@@ -1,0 +1,8 @@
+.countdown-card {
+  float: left;
+  margin: 10px;
+}
+
+.countdown-card-title {
+  white-space: pre-line;
+}

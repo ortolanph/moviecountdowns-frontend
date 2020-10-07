@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Other Options
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target=".support-modal">Support us!</a>
+        </div>
+      </li>
+      <li class="nav-item active" *ngFor="let year of years">
+        <a class="nav-link" href="#" (click)="changeYear(year)">{{year}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal fade support-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Support us!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Help us to bring more countdowns and upgrades to this site! Click on the button below and Buy me a Coffee!</p>
+        <p>Here are some ideas that we have:</p>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-idea1-list" data-toggle="list" href="#list-idea1" role="tab" aria-controls="home">Lisk Countdowns</a>
+              <a class="list-group-item list-group-item-action" id="list-idea2-list" data-toggle="list" href="#list-idea2" role="tab" aria-controls="profile">Film Makers</a>
+              <a class="list-group-item list-group-item-action" id="list-idea3-list" data-toggle="list" href="#list-idea3" role="tab" aria-controls="profile">Hype Meter</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-idea1" role="tabpanel" aria-labelledby="list-idea1-list">
+                Add links to the countdown linking them with the official site, news, trailers, social networks, other movie related networks and ohter contents.
+              </div>
+              <div class="tab-pane fade" id="list-idea2" role="tabpanel" aria-labelledby="list-idea2-list">
+                Provide a form to filmmakers add their movies to team approval.
+              </div>
+              <div class="tab-pane fade" id="list-idea3" role="tabpanel" aria-labelledby="lis3-idea2-list">
+                Add buttons on each countdown to mark the film as hot or cold as a Hype Meter. Add a page to create a Hype Meter of the countdowns.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://www.buymeacoffee.com/{{buyMeACodffeeProfile}}" target="_blank">
+          <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 210px !important;" >
+        </a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

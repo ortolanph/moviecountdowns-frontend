@@ -1,0 +1,12 @@
+<div class="card-columns">
+  <div *ngFor="let countdown of countdowns">
+    <app-count-down-card [countdown]="countdown"></app-count-down-card>
+  </div>
+</div>
+
+<div *ngIf="!countdowns" class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">No countdowns found!</h4>
+  <p>Film makers are working hard to bring to you something amazing to put on the big screen.</p>
+  <p>Maybe it's a reboot, an original content or something espectacular that should be put on this countdown list.</p>
+  <p>Put this site on your favourites and pay a visit from time to time to check any news..</p>
+</div>
