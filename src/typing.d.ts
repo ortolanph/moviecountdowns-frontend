@@ -8,6 +8,7 @@ interface Env {
   API_URL: string
   API_KEY: string
   MENU_TITLE: string
+  COFFEE_USER: string
 }
 
 interface GlobalEnvironment{

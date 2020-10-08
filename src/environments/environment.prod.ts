@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseURL: 'http://moviecountdown-backend.herokuapp.com/api',
-  buyMeACoffeeProfile: 'ortolanph',
+  baseURL: process.env.API_URL,
+  buyMeACoffeeProfile: process.env.COFFEE_USER,
   menuTitle: process.env.MENU_TITLE
 };
