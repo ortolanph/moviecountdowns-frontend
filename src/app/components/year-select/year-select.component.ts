@@ -12,6 +12,7 @@ export class YearSelectComponent implements OnInit {
 
   public years : any;
   public buyMeACodffeeProfile: string;
+  public menuTitle: string = environment.menuTitle;
 
   constructor(private countdownService: CountDownService, private yearchangerService : YearChangerService) {
     this.buyMeACodffeeProfile = environment.buyMeACoffeeProfile;
