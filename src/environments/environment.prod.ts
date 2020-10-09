@@ -3,5 +3,5 @@ export const environment = {
   baseURL: process.env.API_URL,
   apiKey: process.env.API_KEY,
   menuTitle: process.env.MENU_TITLE,
-  buyMeACoffeeProfile: 'ortolanph'
+  buyMeACoffeeProfile: process.env.COFFEE_USER
 };
