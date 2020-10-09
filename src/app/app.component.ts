@@ -7,7 +7,7 @@ import {YearChangerService} from "./services/year-changer.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  {
-  title = 'Movies Countdown';
+  title = 'Movies Countdowns';
 
   constructor(private yearChangerService: YearChangerService) {
   }
