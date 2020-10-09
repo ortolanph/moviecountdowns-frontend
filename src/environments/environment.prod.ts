@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
-  baseURL: 'http://moviecountdowns-backend.herokuapp.com/api',
-  apiKey: "12345",
+  baseURL: process.env.API_URL,
+  apiKey: process.env.API_KEY,
+  menuTitle: process.env.MENU_TITLE,
   buyMeACoffeeProfile: 'ortolanph'
 };
